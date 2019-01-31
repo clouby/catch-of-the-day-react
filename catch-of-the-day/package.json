@@ -1,5 +1,5 @@
 {
-  "name": "cotd",
+  "name": "cotd_cl",
   "version": "0.0.3",
   "private": true,
   "devDependencies": {
@@ -21,11 +21,11 @@
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve --single ./build",
-    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
+    "watch": "concurrently --names \"webpack,stylus\" --prefix name \"npm run dev\" \"npm run styles:watch\"",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
-    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
+    "styles:watch": "stylus -w ./src/css/style.styl -o ./src/css/style.css"
   },
   "browserslist": [
     ">0.2%",
